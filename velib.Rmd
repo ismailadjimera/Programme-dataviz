@@ -1,0 +1,58 @@
+---
+title: "Localisation des velibs à paris"
+output: html_notebook
+---
+
+
+
+```{r message=F, warning=F}
+
+
+#Pour la mise en forme du markdown
+if (!require(plotly)){install.packages("plotly")} ; library(plotly) # Pour le heatmap de la matrice de correlation
+if (!require(tidyr)){install.packages("tidyr")} ; library(tidyr)
+if (!require(leaflet)){install.packages("leaflet")} ; library(leaflet)
+if (!require(qtlcharts)){install.packages("qtlcharts")} ; library(qtlcharts) # Pour la correlation des variables
+if (!require(pander)){install.packages("pander")} ; library(pander) # pour bien afficher les extract de table
+library(dplyr)
+```
+
+```{r}
+library(readr)
+
+setwd("C:/Users/X097430/Desktop/Script R")
+velib <- read_delim("C:/Users/X097430/Desktop/Script R/velib.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+velib<- separate(velib, position, c("latitude", "longitude"),sep=",")
+
+velib$longitude=as.numeric(velib$longitude)
+velib$latitude=as.numeric(velib$latitude)
+velib$velib=1
+
+#who, code, c("new", "var", "sexage")
+```
+
+```{r}
+leaflet(velib,width = "100%",height = 800) %>% 
+  addTiles(group = "OSM (default)") %>%
+  addProviderTiles(provider = "Esri.WorldStreetMap",group = "World StreetMap") %>%
+  addProviderTiles(provider = "Esri.WorldImagery",group = "World Imagery") %>%
+  addProviderTiles(provider = "NASAGIBS.ViirsEarthAtNight2012",group = "Nighttime Imagery") %>%
+    addProviderTiles(provider = "NASAGIBS.ModisTerraBands367CR",group = "Hybrid Imagery") %>%
+      addTiles() %>% fitBounds(147,90,-101,-90) %>% 
+       addMarkers(~latitude,~longitude,popup = "velib",clusterOptions = markerClusterOptions())  %>%
+      addLayersControl(
+    baseGroups = c("OSM (default)","World StreetMap", "Nighttime Imagery","World Imagery","Hybrid Imagery"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```
+```{r}
+leaflet(data = velib) %>% 
+  addTiles() %>%
+  addMarkers(~latitude, ~longitude,popup= "velib",clusterOptions = markerClusterOptions())
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

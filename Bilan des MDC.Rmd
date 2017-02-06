@@ -1,0 +1,98 @@
+---
+title: "Bilan des MDC et trajectoire 2017"
+output: html_notebook
+---
+
+
+```{r message=F, warning=F}
+library(shinydashboard)
+#Pour la mise en forme du markdown
+if (!require(plotly)){install.packages("plotly")} ; library(plotly) # Pour le heatmap de la matrice de correlation
+if (!require(tidyr)){install.packages("tidyr")} ; library(tidyr)
+if (!require(leaflet)){install.packages("leaflet")} ; library(leaflet)
+if (!require(qtlcharts)){install.packages("qtlcharts")} ; library(qtlcharts) # Pour la correlation des variables
+if (!require(pander)){install.packages("pander")} ; library(pander) # pour bien afficher les extract de table
+library(dplyr)
+library(readr)
+```
+
+
+# Importation des données
+```{r message=F, warning=F}
+setwd("C:/Users/X097430/Desktop/Script R")
+matrice<-read.delim("MATRICE_FINAL2.txt")
+  matrice[is.na(matrice)] <- 0
+matrice<-matrice%>%
+  mutate(
+    type_camp=ifelse(Numero<=15,'relation client',
+           ifelse(Numero>15 & Numero<=27,'produits',
+                  ifelse(Numero>27 & Numero<=31,'reglement',
+                         ifelse(Numero>31,'pft','')))),
+    type_part=ifelse(Numero=c(1,2,3,4,5,6,7,8,10,13,14,15,16,17,18,19,20,23,24,25,26,27,28,29,30),"PART   ",ifelse(Numero=c(11,21,22),"PRO",ifelse(Numero=9,"HDG",ifelse(Numero=12,"PART/PRO"))))
+  )
+  
+sec_agg_region<-matrice %>% 
+    group_by(type_camp,LIELST3,LIELST4,Titre_rapport) %>%
+    summarise(
+      Nb_cc_du_perimetre=sum(Nb_cc_du_perimetre),
+      Nb_CC_contactes=sum(Nb_CC_contactes),
+      Nb_CC_resultat_IC=sum(Nb_CC_resultat_IC)
+    )%>%
+  mutate(Nb_cc_non_contacte=Nb_cc_du_perimetre-Nb_CC_contactes)%>%
+  arrange(desc(Nb_cc_du_perimetre))
+```
+
+
+```{r message=F, warning=F}
+a<-sec_agg_region %>% 
+    group_by(type_camp) %>%
+    summarise(
+      Nb_cc_du_perimetre=sum(Nb_cc_du_perimetre),
+      Nb_CC_contactes=sum(Nb_CC_contactes),
+      Nb_CC_resultat_IC=sum(Nb_CC_resultat_IC),
+      Nb_cc_non_contacte=sum(Nb_cc_non_contacte)
+    )%>%
+  arrange(desc(Nb_cc_du_perimetre))
+
+colors <- c('#3B4E32', '#56A902', '#F8F8FF','#75D701')
+
+plot_ly() %>%
+  add_pie(data=a, labels = ~type_camp, values = ~Nb_CC_contactes,name = "CC ciblés"
+          ,domain = list(x = c(0, 0.4), y = c(0.4, 1)),
+          marker = list(colors = colors,
+                      line = list(color = '#FFFFFF', width = 1))
+          )%>%
+  add_pie(data=a, labels = ~type_camp, values = ~Nb_cc_non_contacte,name = "CC contactés" 
+          ,domain = list(x = c(0.6, 1), y = c(0.4, 1))
+          )%>%
+  add_pie(data=a, labels = ~type_camp, values = ~Nb_CC_resultat_IC,name = "CC contactés avec IC" 
+          ,domain = list(x = c(0.25, 0.75), y = c(0, 0.6))
+          )%>%
+  
+ layout(title = "Résultats par type d'action", showlegend = T,
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+        
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))%>% 
+layout(plot_bgcolor='#e3dede') %>% 
+layout(paper_bgcolor='#e3dede')
+```
+```{r}
+a<-sec_agg_region %>% 
+    group_by(Titre_rapport) %>%
+    summarise(
+      Nb_cc_du_perimetre=sum(Nb_cc_du_perimetre),
+      Nb_CC_contactes=sum(Nb_CC_contactes),
+      Nb_cc_non_contacte=sum(Nb_cc_non_contacte),
+      Nb_CC_resultat_IC=sum(Nb_CC_resultat_IC)
+    )%>%
+  arrange(desc(Nb_cc_du_perimetre))
+a$Titre_rapport <- factor(a$Titre_rapport, levels = unique(a$Titre_rapport)[order(a$Nb_cc_du_perimetre, decreasing = TRUE)])
+
+plot_ly(a, x = ~Titre_rapport, y = ~Nb_cc_non_contacte, type = 'bar', name = 'Nb_cc_non_contacte') %>%
+      add_trace(y = ~Nb_CC_contactes, name = 'Nb_CC_contactes') %>%
+      add_trace(y = ~Nb_CC_resultat_IC, name = 'Nb_CC_resultat_IC') %>%
+      layout(yaxis = list(title = 'Pourcentage'),xaxis=list(tittle="DS/DGC"), barmode = 'stack')%>% 
+layout(plot_bgcolor='#e3dede') %>% 
+layout(paper_bgcolor='#e3dede')
+```
+

@@ -1,0 +1,435 @@
+---
+title: "Equipement client quasi_banque principale"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    theme: flatly
+    #storyboard: true
+    #social: menu
+    vertical_layout: fill
+---
+
+Univers banque et assurance
+=====================================  
+
+```{r global, include=FALSE}
+library(flexdashboard)
+library(shinydashboard)
+#Pour la mise en forme du markdown
+if (!require(plotly)){install.packages("plotly")} ; library(plotly) # Pour le heatmap de la matrice de correlation
+if (!require(tidyr)){install.packages("tidyr")} ; library(tidyr)
+if (!require(leaflet)){install.packages("leaflet")} ; library(leaflet)
+if (!require(qtlcharts)){install.packages("qtlcharts")} ; library(qtlcharts) # Pour la correlation des variables
+if (!require(pander)){install.packages("pander")} ; library(pander) # pour bien afficher les extract de table
+if (!require(googleVis)){install.packages("googleVis")} ; library(googleVis)
+library(knitr)
+library(DT)
+library(data.table)
+library(dplyr)
+library(readr)
+library(htmlTable)
+library(readxl)
+library(shiny)
+library(highcharter)
+
+EQUIPEMENT_CC <- read.csv("S:/2403/3509/T8 - FICHIERS PERSO/Ismaila/EQUIPEMENT_CC_EVT_REC.csv",sep =";" )
+EQUIPEMENT_CC$SEG_CASA<-as.character(EQUIPEMENT_CC$SEG_CASA)
+EQUIPEMENT_CC$SEG_COMPORT<-as.character(EQUIPEMENT_CC$SEG_COMPORT)
+EQUIPEMENT_CC$SEG_POT_EXT<-as.character(EQUIPEMENT_CC$SEG_POT_EXT)
+
+EQUIPEMENT_CC$SEG_CASA[EQUIPEMENT_CC$SEG_CASA==""] <- "NON_SEGMENTE"
+EQUIPEMENT_CC$SEG_COMPORT[EQUIPEMENT_CC$SEG_COMPORT==""] <- "NON_SEGMENTE"
+EQUIPEMENT_CC$SEG_POT_EXT[EQUIPEMENT_CC$SEG_POT_EXT==""] <- "NON_SEGMENTE"
+
+```
+
+Inputs {.sidebar data-width=350}
+-----------------------------------------------------------------------
+
+
+
+`Périmètre client :`<br>
+CC Famille<br>
+Client (au moins une personne physique utilisatrice d'au moins un produit)<br>
+<br>
+
+<br>
+`Périmètre univers :`<br>
+Epargne : Livret > 1000 CEL, DAT, PEL, Ass.-Vie,Valeurs mobilières sur CTO/PEA (autre que part sociale). <br>
+Crédits : Habitat, PAC, crédit renouvelable actif (encours utilisé > 0)<br>
+Banque au Quotidien : DAV actif (> 36 opé./an) , Cartes, CAC/CSCA<br>
+Assurance : Biens (NH, Auto, ATM ou PJ), Personnes (Décès, GAV, Santé, GOB)<br>
+L'épargne, le crédit et la banque au quotidien rentrent dans les critères de l'équipement bancaire.<br>
+La domiciliation consiste à détenir au moins 1600 euros mensuel en flux au CABP.<br>
+
+
+<br>
+Nous avons filtré sur les clients **quasi banque principale**. Ce sont les clients qui sont à la limite(soit il ne manque qu'un univers ou il manque tous les univers sauf la domiciliation) d'être client **banque principale**
+
+<br>
+`Analyse :`<br>
+Nombre de clients quasi banque principale : **179.762 clients**<br>
+**65%** à équiper en produit d'assurance, **26%** dont il faut domicilier leur flux<br>
+**45%** sont déjà équipés au moins sur 3 univers et ils doivent domicilier leur flux ou prendre un produit d'assurance pour upgrader en banque principale
+
+Row
+-----------------------------------------------------------------------
+
+
+
+### Répartition du nombre d'univers équipés par les clients quasi banque principale
+    
+```{r}
+equip_unique<-EQUIPEMENT_CC%>%
+  filter(top_unique==1)%>%
+  mutate(
+    nb_univers_equipe=ifelse(Nb_univers ==2,"2 univers équipés",
+                             ifelse(Nb_univers ==3,"3 univers équipés",
+                                    ifelse(Nb_univers ==4,"4 univers équipés","")
+                                    )
+                             )
+    )
+
+a<-equip_unique %>% 
+    group_by(nb_univers_equipe) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+
+
+plot_ly(data=a, labels = ~nb_univers_equipe, values = ~nb_cc, type = 'pie',showlegend =T) %>%
+  layout(title = "Répartition des nombres d'univers équipés",
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
+
+
+### Répartition des critères manquants pour être client banque principale
+    
+```{r}
+equip_unique<-EQUIPEMENT_CC%>%
+  filter(top_unique==1)%>%
+  mutate(
+    nb_univers_equipe=ifelse(Nb_univers ==2,"2 univers équipés",
+                             ifelse(Nb_univers ==3,"3 univers équipés",
+                                    ifelse(Nb_univers ==4,"4 univers équipés","")
+                                    )
+                             )
+    )
+                           
+#col = colorRampPalette(c("red", "white", "darkblue"), space="Lab")(10)
+#hchart(as.character(equip_unique$CRIT_MANQUANT), type = "pie",title = "A nice chart")
+
+a<-equip_unique %>% 
+    group_by(CRIT_MANQUANT) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+
+
+plot_ly(data=a, labels = ~CRIT_MANQUANT, values = ~nb_cc, type = 'pie',showlegend =T) %>%
+  layout(title = "Répartition des critères manquants pour devenir banque principale",
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+```    
+
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+### Nombre d'univers équipés et univers manquant
+    
+```{r}
+a<-equip_unique %>% 
+    group_by(CRIT_MANQUANT,nb_univers_equipe) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+a$nb_univers_equipe <- factor(a$nb_univers_equipe, levels = unique(a$nb_univers_equipe)[order(a$nb_cc, decreasing = F)])
+a$nb_univers_equipe <- factor(a$nb_univers_equipe, levels = unique(a$nb_univers_equipe)[order(a$nb_cc, decreasing = F)])
+#renderPlot(
+  plot_ly(a, x = ~nb_cc, y =~nb_univers_equipe , type = 'bar',
+          orientation = 'h', 
+          name = 'Nb_cc_non_contacte', color = ~CRIT_MANQUANT) %>%
+      layout(title = "Nombre de CC par critères manquants et par nombre d'univers équipés",
+         xaxis = list(title = "Nombre de CC",
+                      #showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.10, 1)),
+         yaxis = list(title = "",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.08, 1)),
+         barmode = 'stack'
+         )
+#)
+
+
+```
+
+   
+### Nouvelle segmentation CASA
+
+```{r}
+a<-equip_unique %>% 
+    group_by(SEG_CASA,CRIT_MANQUANT) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+a$SEG_CASA <- factor(a$SEG_CASA, levels = unique(a$SEG_CASA)[order(a$nb_cc, decreasing = F)])
+a$SEG_CASA <- factor(a$SEG_CASA, levels = unique(a$SEG_CASA)[order(a$nb_cc, decreasing = F)])
+
+
+
+#renderPlot(
+  plot_ly(a, x =~nb_cc , y =~SEG_CASA , type = 'bar',orientation = 'h', name = 'Nb_cc_non_contacte', color = ~CRIT_MANQUANT) %>%
+      layout(title = "Nombre de CC par Segmentation CASA et par critères manquants",subtitle= 'Plot Subtitle',
+         xaxis = list(title = "Nombre de CC",
+                      #???showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.10, 1)),
+         yaxis = list(title = "",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.08, 1)),
+         barmode = 'stack'
+         )
+#)
+```
+
+
+### Nouvelle segmentation COMPORTEMENTAL
+    
+```{r}
+a<-equip_unique %>% 
+    group_by(SEG_COMPORT,CRIT_MANQUANT) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+a$SEG_COMPORT <- factor(a$SEG_COMPORT, levels = unique(a$SEG_COMPORT)[order(a$nb_cc, decreasing = F)])
+a$SEG_COMPORT <- factor(a$SEG_COMPORT, levels = unique(a$SEG_COMPORT)[order(a$nb_cc, decreasing = F)])
+
+
+
+#renderPlot(
+  plot_ly(a, x =~nb_cc , y =~SEG_COMPORT , type = 'bar',orientation = 'h', name = 'Nb_cc_non_contacte', color = ~CRIT_MANQUANT) %>%
+      layout(title = "Nombre de CC par Segmentation COMPORTEMENTAL et par critères manquants",
+         xaxis = list(title = "Nombre de CC",
+                      #showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.10, 1)),
+         yaxis = list(title = "",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.08, 1)),
+         barmode = 'stack'
+         )
+#)
+```
+
+### Nouvelle segmentation POTENTIEL EXTERIEUR
+    
+```{r}
+a<-equip_unique %>% 
+    group_by(SEG_POT_EXT,CRIT_MANQUANT) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+a$SEG_POT_EXT <- factor(a$SEG_POT_EXT, levels = unique(a$SEG_POT_EXT)[order(a$nb_cc, decreasing = F)])
+a$SEG_POT_EXT <- factor(a$SEG_POT_EXT, levels = unique(a$SEG_POT_EXT)[order(a$nb_cc, decreasing = F)])
+
+
+
+#renderPlot(
+  plot_ly(a, x =~nb_cc , y =~SEG_POT_EXT , type = 'bar',orientation = 'h', name = 'Nb_cc_non_contacte', color = ~CRIT_MANQUANT) %>%
+      layout(title = "Nombre de CC par Segmentation Potentiel et par critères manquants",
+         xaxis = list(title = "Nombre de CC",
+                      #???showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.10, 1)),
+         yaxis = list(title = "",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE,
+                      domain = c(0.08, 1)),
+         barmode = 'stack'
+         )
+#)
+```
+
+Traitement des événements récurrents
+=====================================  
+
+Inputs {.sidebar data-width=350}
+-----------------------------------------------------------------------
+
+
+
+
+`Périmètre client :`<br>
+CC Famille<br>
+Client (au moins une personne physique utilisatrice d'au moins un produit)<br>
+<br>
+<br>
+`Périmètre univers :`<br>
+Epargne : Livret > 1000 CEL, DAT, PEL, Ass.-Vie,Valeurs mobilières sur CTO/PEA (autre que part sociale). <br>
+Crédits : Habitat, PAC, crédit renouvelable actif (encours utilisé > 0)<br>
+Banque au Quotidien : DAV actif (> 36 opé./an) , Cartes, CAC/CSCA<br>
+Assurance : Biens (NH, Auto, ATM ou PJ), Personnes (Décès, GAV, Santé, GOB)<br>
+<br>
+<br>
+Nous avons filtré sur les clients **quasi banque principale**. Ce sont les clients qui sont à la limite(soit il ne manque qu'un univers ou il manque tous les univers sauf la domiciliation) d'être client **banque principale**
+
+<br>
+`Analyse :`<br>
+Nombre de clients quasi banque principale: **179.762 clients**<br>
+**8.574** de ces clients ont été ciblés par les événements récurrents du mois de février soit **5%** des clients en devenir d'être banque principale et `42% du total des clients ciblés par les événements récurrents du mois de février 2017`<br>
+**78%** à équiper en produit d'assurance, **16%** dont il faut domicilier leur flux<br>
+**42%** sont déjà équipés au moins sur 3 univers et ils doivent domicilier leur flux ou prendre un produit d'assurance pour upgrader en banque principale
+
+
+
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+### Répartition des actions récurrentes
+```{r}
+
+#num <- reactive(as.integer(input$clusterNum))
+equip_unique<-EQUIPEMENT_CC%>%
+  filter(top_cible_evt_rec==1 & top_unique==1)%>%
+  mutate(
+    nb_univers_equipe=ifelse(Nb_univers ==2,"2 univers équipés",
+                             ifelse(Nb_univers ==3,"3 univers équipés",
+                                    ifelse(Nb_univers ==4,"4 univers équipés","")
+                                    )
+                             )
+    )
+
+a<-equip_unique %>% 
+    group_by(LI_CAMPGN) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE),
+      n_percent_cc=100*round(nb_cc/nrow(equip_unique),2)
+    )%>%
+  arrange(desc(nb_cc))
+
+
+plot_ly(a,x = ~LI_CAMPGN, y = ~nb_cc, 
+              type = 'bar',
+        #orientation = 'h',
+              marker = list(color = 'rgba(50, 171, 96, 0.6)',
+                            line = list(color = 'rgba(50, 171, 96, 1.0)', width = 1))) %>%
+  layout(title="Répartition des clients quasi banque principale ciblés pour les événements récurrents du mois de février 2017",yaxis = list(title = "Nombre de CC",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE, domain= c(0, 0.85)),
+         xaxis = list(title = "",zeroline = FALSE, showline = FALSE, showticklabels = T, showgrid = TRUE)) %>%
+  add_annotations(
+                  
+                  text = paste(round(a$n_percent_cc, 2), '%'),
+                  font = list(family = 'Arial', size = 12, color = 'rgb(50, 171, 96)'),
+                  showarrow = FALSE)
+```
+
+### Répartition des univers manquants par action récurrentes
+
+```{r}
+MyTable <- table( equip_unique$LI_CAMPGN,equip_unique$CRIT_MANQUANT)
+
+tableau<-as.data.frame.matrix(MyTable)
+tableau$campagne=row.names(tableau)
+
+tableau <- tableau%>%filter(DOMICILIATION>0)%>%
+  mutate(prct_dom=round(100*DOMICILIATION/(`DOMICILIATION`+`EQPT ASSURANCE`+`EQPT BANCAIRE`),2),
+       prct_bque=round(100*`EQPT BANCAIRE`/(`DOMICILIATION`+`EQPT ASSURANCE`+`EQPT BANCAIRE`),2) ,
+       prct_assu=round(100*`EQPT ASSURANCE`/(`DOMICILIATION`+`EQPT ASSURANCE`+`EQPT BANCAIRE`),2))
+
+tableau<-as.data.frame(tableau)
+
+plot_ly(tableau, x = ~campagne, y =~prct_assu , type = 'bar', name = '%  EQP ASSURANCE') %>%
+      add_trace(y = ~prct_bque, name = '% EQUP BANCAIRE') %>%
+      add_trace(y =~prct_dom , name = '% DOMICILIATION') %>%
+      layout(title='Répartition des univers manquants par événements récurrents du mois de février 2017', yaxis = list(title = "Pourcentage de CC",
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      #showticklabels = FALSE,
+                      zeroline = FALSE, domain= c(0, 0.85)),
+         xaxis = list(title = "",zeroline = FALSE, showline = FALSE, showticklabels = T, showgrid = TRUE), barmode = 'stack')
+
+```
+
+
+Row
+-----------------------------------------------------------------------
+
+
+
+
+### Répartition du nombre d'univers équipés par les clients quasi banque principale
+    
+```{r}
+
+a<-equip_unique %>% 
+    group_by(nb_univers_equipe) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+
+
+plot_ly(data=a, labels = ~nb_univers_equipe, values = ~nb_cc, type = 'pie',showlegend =T) %>%
+  layout(title = "Répartition des nombres d'univers équipés",
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
+
+### Répartition des critères manquants pour être client banque principale
+    
+```{r}
+
+
+  
+
+#hchart(as.character(equip_unique$CRIT_MANQUANT), type = "pie")
+
+
+a<-equip_unique %>% 
+    group_by(CRIT_MANQUANT) %>%
+    summarise(
+      nb_cc=n_distinct(IDCLI_CALCULE)
+    )%>%
+  arrange(desc(nb_cc))
+
+
+plot_ly(data=a, labels = ~CRIT_MANQUANT, values = ~nb_cc, type = 'pie',showlegend =T) %>%
+  layout(title = "Répartition des univers manquants pour devenir banque procipale",
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+```
+

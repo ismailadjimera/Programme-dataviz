@@ -1,0 +1,551 @@
+"","rank","year","continent","economy","port","port_label","lon","lat","volume"
+"1",1,"2014","Asia","China","Shanghai","Shanghai",121.473701,31.230416,35268
+"2",2,"2014","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,33869
+"3",3,"2014","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,23798
+"4",4,"2014","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,22374
+"5",5,"2014","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,19450
+"6",6,"2014","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,18423
+"7",7,"2014","Asia","China","Qingdao","Qingdao",120.382609,36.067108,16624
+"8",8,"2014","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,16160
+"9",9,"2014","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,14750
+"10",10,"2014","Asia","China","Tianjin","Tianjin",117.200983,39.084158,14050
+"11",11,"2014","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,12453
+"12",12,"2014","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,10736
+"13",13,"2014","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,10593
+"14",14,"2014","Asia","China","Dalian","Dalian",121.614682,38.914003,10128
+"15",15,"2014","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,9729
+"16",16,"2014","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,9136
+"17",17,"2014","Asia","China","Xiamen","Xiamen",118.089425,24.479834,8572
+"18",18,"2014","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,8340
+"19",19,"2014","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,7897
+"20",20,"2014","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6821
+"21",21,"2014","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,6518
+"22",22,"2014","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,6334
+"23",23,"2014","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,5796
+"24",24,"2014","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5772
+"25",25,"2014","Asia","China","Yingkou","Yingkou",122.108231,40.266062,5768
+"26",26,"2014","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,5034
+"27",27,"2014","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,5005
+"28",28,"2014","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4917
+"29",29,"2014","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4496
+"30",30,"2014","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,4457
+"31",31,"2014","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,4442
+"32",32,"2014","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,4256
+"33",33,"2014","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,4200
+"34",34,"2014","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,4097
+"35",35,"2014","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,3685
+"36",36,"2014","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3680
+"37",37,"2014","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,3673
+"38",38,"2014","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,3456
+"39",39,"2014","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,3445
+"40",40,"2014","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,3354
+"41",41,"2014","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,3346
+"42",42,"2014","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,3236
+"43",43,"2014","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3062
+"44",44,"2014","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,3036
+"45",45,"2014","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3030
+"46",46,"2014","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,2943
+"47",47,"2014","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2913
+"48",48,"2014","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2869
+"49",49,"2014","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,2775
+"50",50,"2014","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2740
+"51",1,"2013","Asia","China","Shanghai","Shanghai",121.473701,31.230416,33617
+"52",2,"2013","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,32240
+"53",3,"2013","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,23280
+"54",4,"2013","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,22352
+"55",6,"2013","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,17351
+"56",5,"2013","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,17690
+"57",7,"2013","Asia","China","Qingdao","Qingdao",120.382609,36.067108,15520
+"58",8,"2013","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,15309
+"59",9,"2013","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,13641
+"60",10,"2013","Asia","China","Tianjin","Tianjin",117.200983,39.084158,13010
+"61",11,"2013","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,11621
+"62",13,"2013","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,10350
+"63",14,"2013","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9938
+"64",12,"2013","Asia","China","Dalian","Dalian",121.614682,38.914003,10860
+"65",15,"2013","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,9302
+"66",16,"2013","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8578
+"67",17,"2013","Asia","China","Xiamen","Xiamen",118.089425,24.479834,8010
+"68",18,"2013","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7869
+"69",19,"2013","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,7628
+"70",20,"2013","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6731
+"71",22,"2013","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,6032
+"72",24,"2013","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,5542
+"73",23,"2013","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,5831
+"74",26,"2013","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5467
+"75",27,"2013","Asia","China","Yingkou","Yingkou",122.108231,40.266062,5301
+"76",21,"2013","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,6590
+"77",25,"2013","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,5490
+"78",28,"2013","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4861
+"79",33,"2013","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4162
+"80",30,"2013","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,4501
+"81",31,"2013","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,4328
+"82",35,"2013","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,3800
+"83",29,"2013","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,4561
+"84",32,"2013","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,4306
+"85",39,"2013","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,3446
+"86",37,"2013","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3740
+"87",36,"2013","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,3770
+"88",38,"2013","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,3461
+"89",40,"2013","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,3378
+"90",50,"2013","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,2558
+"91",44,"2013","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,3034
+"92",43,"2013","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,3064
+"93",42,"2013","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3087
+"94",34,"2013","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,4100
+"95",41,"2013","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3340
+"96",49,"2013","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,2642
+"97",46,"2013","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2825
+"98",47,"2013","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2750
+"99",45,"2013","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,2888
+"100",48,"2013","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2709
+"101",1,"2012","Asia","China","Shanghai","Shanghai",121.473701,31.230416,32529
+"102",2,"2012","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,31649
+"103",4,"2012","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,22940
+"104",3,"2012","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,23117
+"105",6,"2012","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,16670
+"106",5,"2012","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,17046
+"107",8,"2012","Asia","China","Qingdao","Qingdao",120.382609,36.067108,14503
+"108",7,"2012","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,14744
+"109",9,"2012","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,13270
+"110",10,"2012","Asia","China","Tianjin","Tianjin",117.200983,39.084158,12300
+"111",11,"2012","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,11866
+"112",12,"2012","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,10000
+"113",13,"2012","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9781
+"114",17,"2012","Asia","China","Dalian","Dalian",121.614682,38.914003,8060
+"115",14,"2012","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,8864
+"116",15,"2012","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8635
+"117",19,"2012","Asia","China","Xiamen","Xiamen",118.089425,24.479834,7202
+"118",16,"2012","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,8078
+"119",18,"2012","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,7700
+"120",22,"2012","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6046
+"121",23,"2012","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,5830
+"122",25,"2012","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,5060
+"123",21,"2012","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,6115
+"124",24,"2012","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5530
+"125",27,"2012","Asia","China","Yingkou","Yingkou",122.108231,40.266062,4851
+"126",20,"2012","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,6200
+"127",26,"2012","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,5020
+"128",28,"2012","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4752
+"129",31,"2012","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4260
+"130",33,"2012","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,4114
+"131",30,"2012","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,4470
+"132",34,"2012","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,3996
+"133",29,"2012","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,4738
+"134",32,"2012","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,4180
+"135",41,"2012","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,3172
+"136",36,"2012","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3700
+"137",35,"2012","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,3705
+"138",39,"2012","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,3510
+"139",42,"2012","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,3097
+"140",50,"2012","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,1900
+"141",44,"2012","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2966
+"142",40,"2012","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,3251
+"143",45,"2012","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,2721
+"144",37,"2012","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,3631
+"145",38,"2012","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3620
+"146",47,"2012","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,2705
+"147",46,"2012","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2713
+"148",49,"2012","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2540
+"149",43,"2012","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3053
+"150",48,"2012","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2655
+"151",1,"2011","Asia","China","Shanghai","Shanghai",121.473701,31.230416,31700
+"152",2,"2011","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,29937
+"153",4,"2011","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,22570
+"154",3,"2011","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,24384
+"155",6,"2011","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,14686
+"156",5,"2011","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,16185
+"157",8,"2011","Asia","China","Qingdao","Qingdao",120.382609,36.067108,13020
+"158",7,"2011","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,14400
+"159",9,"2011","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,13000
+"160",11,"2011","Asia","China","Tianjin","Tianjin",117.200983,39.084158,11500
+"161",10,"2011","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,11877
+"162",13,"2011","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,9604
+"163",12,"2011","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9636
+"164",19,"2011","Asia","China","Dalian","Dalian",121.614682,38.914003,6400
+"165",14,"2011","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,9022
+"166",15,"2011","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8664
+"167",18,"2011","Asia","China","Xiamen","Xiamen",118.089425,24.479834,6461
+"168",16,"2011","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7941
+"169",17,"2011","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,7500
+"170",20,"2011","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6061
+"171",22,"2011","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,5731
+"172",26,"2011","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,4674
+"173",21,"2011","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,5915
+"174",24,"2011","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5503
+"175",32,"2011","Asia","China","Yingkou","Yingkou",122.108231,40.266062,4033
+"176",23,"2011","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,5618
+"177",25,"2011","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,4850
+"178",27,"2011","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4640
+"179",31,"2011","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4217
+"180",34,"2011","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3603
+"181",28,"2011","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,4327
+"182",39,"2011","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,3230
+"183",33,"2011","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,4010
+"184",30,"2011","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,4263
+"185",42,"2011","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2985
+"186",36,"2011","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3519
+"187",37,"2011","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,3250
+"188",35,"2011","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,3590
+"189",44,"2011","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,2686
+"190",50,"2011","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,2070
+"191",43,"2011","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2945
+"192",38,"2011","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,3232
+"193",49,"2011","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,2305
+"194",29,"2011","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,4272
+"195",40,"2011","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3201
+"196",47,"2011","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,2403
+"197",46,"2011","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2551
+"198",48,"2011","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2360
+"199",41,"2011","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3083
+"200",45,"2011","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2623
+"201",1,"2010","Asia","China","Shanghai","Shanghai",121.473701,31.230416,29069
+"202",2,"2010","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,28431
+"203",4,"2010","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,22510
+"204",3,"2010","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,23532
+"205",6,"2010","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,13144
+"206",5,"2010","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,14157
+"207",8,"2010","Asia","China","Qingdao","Qingdao",120.382609,36.067108,12012
+"208",7,"2010","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,12550
+"209",9,"2010","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,11600
+"210",11,"2010","Asia","China","Tianjin","Tianjin",117.200983,39.084158,10080
+"211",10,"2010","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,11146
+"212",13,"2010","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,8870
+"213",12,"2010","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,8872
+"214",21,"2010","Asia","China","Dalian","Dalian",121.614682,38.914003,5242
+"215",15,"2010","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,7900
+"216",14,"2010","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8468
+"217",19,"2010","Asia","China","Xiamen","Xiamen",118.089425,24.479834,5820
+"218",16,"2010","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7832
+"219",17,"2010","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,6530
+"220",18,"2010","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6263
+"221",22,"2010","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,5068
+"222",28,"2010","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,4100
+"223",23,"2010","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,4871
+"224",20,"2010","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5292
+"225",35,"2010","Asia","China","Yingkou","Yingkou",122.108231,40.266062,3338
+"226",24,"2010","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,4715
+"227",29,"2010","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,3870
+"228",25,"2010","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4286
+"229",30,"2010","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,3857
+"230",41,"2010","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,2810
+"231",26,"2010","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,4207
+"232",38,"2010","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,3023
+"233",31,"2010","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,3830
+"234",27,"2010","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,4137
+"235",43,"2010","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2716
+"236",34,"2010","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3400
+"237",37,"2010","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,3257
+"238",NA,"2010","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"239",45,"2010","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,2540
+"240",49,"2010","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,2058
+"241",40,"2010","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2825
+"242",42,"2010","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,2759
+"243",39,"2010","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,2851
+"244",32,"2010","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,3646
+"245",33,"2010","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3482
+"246",48,"2010","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,2199
+"247",46,"2010","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2514
+"248",47,"2010","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2371
+"249",36,"2010","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3280
+"250",44,"2010","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2549
+"251",2,"2009","Asia","China","Shanghai","Shanghai",121.473701,31.230416,25002
+"252",1,"2009","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,25866
+"253",4,"2009","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,18250
+"254",3,"2009","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,20983
+"255",8,"2009","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,10502
+"256",5,"2009","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,11954
+"257",9,"2009","Asia","China","Qingdao","Qingdao",120.382609,36.067108,10260
+"258",6,"2009","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,11190
+"259",7,"2009","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,11124
+"260",11,"2009","Asia","China","Tianjin","Tianjin",117.200983,39.084158,8700
+"261",10,"2009","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,9743
+"262",13,"2009","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,7309
+"263",12,"2009","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,8581
+"264",22,"2009","Asia","China","Dalian","Dalian",121.614682,38.914003,4552
+"265",15,"2009","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,7007
+"266",13,"2009","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,7309
+"267",19,"2009","Asia","China","Xiamen","Xiamen",118.089425,24.479834,4680
+"268",16,"2009","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,6748
+"269",17,"2009","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,6000
+"270",18,"2009","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,5067
+"271",23,"2009","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,4538
+"272",28,"2009","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,3563
+"273",20,"2009","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,4578
+"274",21,"2009","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,4561
+"275",40,"2009","Asia","China","Yingkou","Yingkou",122.108231,40.266062,2537
+"276",26,"2009","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3800
+"277",35,"2009","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,3021
+"278",25,"2009","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,3810
+"279",24,"2009","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4061
+"280",34,"2009","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3042
+"281",27,"2009","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,3653
+"282",38,"2009","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,2750
+"283",33,"2009","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,3091
+"284",30,"2009","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,3464
+"285",44,"2009","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2252
+"286",32,"2009","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3100
+"287",37,"2009","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2815
+"288",NA,"2009","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"289",47,"2009","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,1836
+"290",49,"2009","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,1222
+"291",42,"2009","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2356
+"292",46,"2009","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,2012
+"293",36,"2009","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,2857
+"294",31,"2009","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,3300
+"295",29,"2009","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3490
+"296",48,"2009","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,1578
+"297",41,"2009","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2492
+"298",43,"2009","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,2260
+"299",39,"2009","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,2555
+"300",45,"2009","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2113
+"301",2,"2008","Asia","China","Shanghai","Shanghai",121.473701,31.230416,27980
+"302",1,"2008","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,29918
+"303",4,"2008","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,21414
+"304",3,"2008","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,24248
+"305",7,"2008","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,11226
+"306",5,"2008","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,13425
+"307",10,"2008","Asia","China","Qingdao","Qingdao",120.382609,36.067108,10320
+"308",8,"2008","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,11001
+"309",6,"2008","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,11827
+"310",14,"2008","Asia","China","Tianjin","Tianjin",117.200983,39.084158,8500
+"311",9,"2008","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,10784
+"312",15,"2008","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,7970
+"313",12,"2008","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9677
+"314",23,"2008","Asia","China","Dalian","Dalian",121.614682,38.914003,4503
+"315",11,"2008","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,9737
+"316",13,"2008","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8663
+"317",22,"2008","Asia","China","Xiamen","Xiamen",118.089425,24.479834,5035
+"318",16,"2008","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7850
+"319",18,"2008","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,5600
+"320",17,"2008","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6350
+"321",21,"2008","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,5134
+"322",35,"2008","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,3100
+"323",19,"2008","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,5529
+"324",20,"2008","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5265
+"325",44,"2008","Asia","China","Yingkou","Yingkou",122.108231,40.266062,2030
+"326",25,"2008","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3984
+"327",37,"2008","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,3001
+"328",24,"2008","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,4271
+"329",26,"2008","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,3953
+"330",32,"2008","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3324
+"331",28,"2008","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,3593
+"332",43,"2008","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,2112
+"333",31,"2008","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,3326
+"334",27,"2008","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,3687
+"335",40,"2008","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2675
+"336",34,"2008","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3200
+"337",38,"2008","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2977
+"338",NA,"2008","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"339",NA,"2008","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,NA
+"340",NA,"2008","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,NA
+"341",41,"2008","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2616
+"342",45,"2008","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,2011
+"343",30,"2008","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3468
+"344",33,"2008","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,3202
+"345",36,"2008","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,3068
+"346",NA,"2008","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,NA
+"347",42,"2008","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2307
+"348",NA,"2008","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,NA
+"349",29,"2008","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3490
+"350",39,"2008","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2817
+"351",2,"2007","Asia","China","Shanghai","Shanghai",121.473701,31.230416,26150
+"352",1,"2007","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,27932
+"353",4,"2007","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,21099
+"354",3,"2007","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,23881
+"355",11,"2007","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,9349
+"356",5,"2007","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,13270
+"357",10,"2007","Asia","China","Qingdao","Qingdao",120.382609,36.067108,9462
+"358",12,"2007","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,9200
+"359",7,"2007","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,10653
+"360",17,"2007","Asia","China","Tianjin","Tianjin",117.200983,39.084158,7103
+"361",6,"2007","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,10791
+"362",16,"2007","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,7120
+"363",8,"2007","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,10257
+"364",23,"2007","Asia","China","Dalian","Dalian",121.614682,38.914003,4574
+"365",9,"2007","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,9890
+"366",14,"2007","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,8176
+"367",22,"2007","Asia","China","Xiamen","Xiamen",118.089425,24.479834,4627
+"368",13,"2007","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,8355
+"369",18,"2007","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,5500
+"370",15,"2007","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,7316
+"371",21,"2007","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,4642
+"372",39,"2007","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,2532
+"373",20,"2007","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,4912
+"374",19,"2007","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5299
+"375",45,"2007","Asia","China","Yingkou","Yingkou",122.108231,40.266062,1371
+"376",25,"2007","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3900
+"377",43,"2007","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,2001
+"378",26,"2007","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,3818
+"379",24,"2007","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,4060
+"380",31,"2007","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3152
+"381",33,"2007","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,3043
+"382",44,"2007","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,1850
+"383",32,"2007","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,3068
+"384",29,"2007","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,3380
+"385",38,"2007","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2533
+"386",30,"2007","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3300
+"387",35,"2007","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2800
+"388",NA,"2007","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"389",NA,"2007","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,NA
+"390",NA,"2007","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,NA
+"391",36,"2007","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2604
+"392",41,"2007","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,2167
+"393",27,"2007","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3445
+"394",42,"2007","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,2127
+"395",37,"2007","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,2600
+"396",NA,"2007","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,NA
+"397",40,"2007","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,2208
+"398",NA,"2007","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,NA
+"399",28,"2007","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3400
+"400",34,"2007","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2890
+"401",3,"2006","Asia","China","Shanghai","Shanghai",121.473701,31.230416,21710
+"402",1,"2006","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,24792
+"403",4,"2006","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,18469
+"404",2,"2006","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,23539
+"405",13,"2006","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,7068
+"406",5,"2006","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,12039
+"407",11,"2006","Asia","China","Qingdao","Qingdao",120.382609,36.067108,7702
+"408",15,"2006","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,6600
+"409",8,"2006","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,8923
+"410",17,"2006","Asia","China","Tianjin","Tianjin",117.200983,39.084158,5950
+"411",7,"2006","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,9655
+"412",16,"2006","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,6326
+"413",6,"2006","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9775
+"414",27,"2006","Asia","China","Dalian","Dalian",121.614682,38.914003,3212
+"415",9,"2006","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,8862
+"416",14,"2006","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,7019
+"417",22,"2006","Asia","China","Xiamen","Xiamen",118.089425,24.479834,4019
+"418",10,"2006","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,8470
+"419",19,"2006","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,4770
+"420",12,"2006","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,7289
+"421",21,"2006","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,4123
+"422",36,"2006","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,2532
+"423",20,"2006","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,4450
+"424",18,"2006","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,5093
+"425",45,"2006","Asia","China","Yingkou","Yingkou",122.108231,40.266062,838
+"426",25,"2006","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3280
+"427",43,"2006","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,1302
+"428",23,"2006","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,3969
+"429",24,"2006","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,3298
+"430",26,"2006","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3257
+"431",35,"2006","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,2612
+"432",42,"2006","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,1730
+"433",31,"2006","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,2964
+"434",29,"2006","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,3079
+"435",38,"2006","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2208
+"436",30,"2006","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,3000
+"437",34,"2006","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2638
+"438",NA,"2006","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"439",NA,"2006","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,NA
+"440",NA,"2006","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,NA
+"441",39,"2006","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,2160
+"442",44,"2006","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,988
+"443",32,"2006","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,2900
+"444",40,"2006","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,2127
+"445",37,"2006","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,2390
+"446",NA,"2006","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,NA
+"447",41,"2006","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,1767
+"448",NA,"2006","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,NA
+"449",28,"2006","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,3200
+"450",33,"2006","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2740
+"451",3,"2005","Asia","China","Shanghai","Shanghai",121.473701,31.230416,18084
+"452",1,"2005","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,23192
+"453",4,"2005","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,16197
+"454",2,"2005","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,22427
+"455",15,"2005","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,5208
+"456",5,"2005","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,11843
+"457",13,"2005","Asia","China","Qingdao","Qingdao",120.382609,36.067108,6307
+"458",18,"2005","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,4685
+"459",9,"2005","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,7619
+"460",16,"2005","Asia","China","Tianjin","Tianjin",117.200983,39.084158,4801
+"461",7,"2005","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,9287
+"462",14,"2005","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,5544
+"463",6,"2005","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9471
+"464",31,"2005","Asia","China","Dalian","Dalian",121.614682,38.914003,2665
+"465",8,"2005","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,8088
+"466",12,"2005","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,6482
+"467",23,"2005","Asia","China","Xiamen","Xiamen",118.089425,24.479834,3342
+"468",10,"2005","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7485
+"469",19,"2005","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,4177
+"470",11,"2005","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,6710
+"471",20,"2005","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,3834
+"472",38,"2005","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,2122
+"473",21,"2005","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,3736
+"474",17,"2005","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,4785
+"475",45,"2005","Asia","China","Yingkou","Yingkou",122.108231,40.266062,634
+"476",24,"2005","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3282
+"477",43,"2005","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,1005
+"478",22,"2005","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,3593
+"479",30,"2005","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,2667
+"480",25,"2005","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,3180
+"481",36,"2005","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,2410
+"482",39,"2005","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,1929
+"483",28,"2005","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,2836
+"484",35,"2005","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,2455
+"485",37,"2005","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,2240
+"486",29,"2005","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,2700
+"487",32,"2005","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2625
+"488",NA,"2005","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"489",NA,"2005","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,NA
+"490",NA,"2005","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,NA
+"491",40,"2005","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,1902
+"492",44,"2005","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,663
+"493",26,"2005","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3161
+"494",42,"2005","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,1522
+"495",33,"2005","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,2492
+"496",NA,"2005","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,NA
+"497",41,"2005","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,1665
+"498",NA,"2005","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,NA
+"499",27,"2005","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,2873
+"500",34,"2005","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2470
+"501",3,"2004","Asia","China","Shanghai","Shanghai",121.473701,31.230416,14557
+"502",2,"2004","Asia","Singapore","Singapore","Singapore",103.819836,1.352083,21329
+"503",4,"2004","Asia","China","Shenzhen","Shenzhen",114.057865,22.543096,13615
+"504",1,"2004","Asia","Hong Kong","Hong Kong","Hong Kong",114.109497,22.396428,21984
+"505",17,"2004","Asia","China","Ningbo-Zhoushan","Ningbo/Z-shan",121.9880433,29.9016199,4006
+"506",5,"2004","Asia","South Korea","Busan","Busan",129.0756416,35.1795543,11430
+"507",14,"2004","Asia","China","Qingdao","Qingdao",120.382609,36.067108,5140
+"508",22,"2004","Asia","China","Guangzhou","Guangzhou",113.264385,23.12911,3308
+"509",10,"2004","Asia","United Arab Emirates","Jebel Ali (Dubai)","Dubai",55.0272904,24.9857145,6429
+"510",18,"2004","Asia","China","Tianjin","Tianjin",117.200983,39.084158,3814
+"511",7,"2004","Europe","Netherlands","Rotterdam","Rotterdam",4.4777325,51.9244201,8281
+"512",13,"2004","Asia","Malaysia","Port Klang","Port Klang",101.39283,2.999852,5244
+"513",6,"2004","Asia","Taiwan","Kaohsiung","Kaohsiung",120.3014353,22.6272784,9714
+"514",35,"2004","Asia","China","Dalian","Dalian",121.614682,38.914003,2211
+"515",9,"2004","Europe","Germany","Hamburg","Hamburg",9.9936818,53.5510846,7003
+"516",11,"2004","Europe","Belgium","Antwerp","Antwerp",4.4024643,51.2194475,6064
+"517",26,"2004","Asia","China","Xiamen","Xiamen",118.089425,24.479834,2872
+"518",8,"2004","North_America","United States","Los Angeles","Los Angeles",-118.2436849,34.0522342,7321
+"519",16,"2004","Asia","Malaysia","Tanjung Pelepas","Tanjung Pelepas",103.551035,1.362374,4020
+"520",12,"2004","North_America","United States","Long Beach","Long Beach",-118.1937395,33.7700504,5780
+"521",19,"2004","Asia","Thailand","Laem Chabang","Laem Chabang",100.9158073,13.1040552,3529
+"522",38,"2004","Asia","Vietnam","Ho Chi Minh City (Saigon)","Saigon",106.6296638,10.8230989,1868
+"523",20,"2004","Europe","Germany","Bremen/Bremerhaven","Bremen",8.5809424,53.5395845,3469
+"524",15,"2004","North_America","United States","New York and New Jersey","New York",-74.0059413,40.7127837,4478
+"525",NA,"2004","Asia","China","Yingkou","Yingkou",122.108231,40.266062,NA
+"526",24,"2004","Asia","Indonesia","Tanjung Priok (Jakarta)","Jakarta",106.8714848,-6.1320555,3170
+"527",NA,"2004","Asia","China","Lianyungang","Lianyungang",119.221611,34.596653,NA
+"528",21,"2004","Asia","Japan","Tokyo","Tokyo",139.6917064,35.6894875,3358
+"529",31,"2004","Asia","India","Mumbai","Mumbai",72.8776559,19.0759837,2361
+"530",25,"2004","Europe","Spain","Algeciras","Algeciras",-5.456233,36.1407591,2937
+"531",36,"2004","Europe","Spain","Valencia","Valencia",-0.3762881,39.46991,2145
+"532",39,"2004","Asia","United Arab Emirates","Khor Fakkan","Khor Fakkan",56.3432629,25.3365669,1819
+"533",30,"2004","Asia","Saudi Arabia","Jeddah","Jeddah",39.2375507,21.2854067,2426
+"534",34,"2004","Asia","Sri Lanka","Colombo","Colombo",79.861243,6.9270786,2221
+"535",37,"2004","South_America","Brazil","Santos","Santos",-46.3288865,-23.9678823,1883
+"536",28,"2004","Europe","United Kingdom","Felixstowe","Felixstowe",1.351255,51.961726,2717
+"537",29,"2004","Asia","Philippines","Manila","Manila",120.9842195,14.5995124,2698
+"538",NA,"2004","North_America","United States","Seattle/Tacoma","Seattle/Tacoma",-122.3088165,47.4502499,NA
+"539",NA,"2004","Europe","Turkey","Ambarli (Istanbul)","Istanbul",28.7110539,40.9767748,NA
+"540",NA,"2004","Africa","Morocco","Tanger-Med (Tangiers)","Tangiers",-5.7155548,35.7239191,NA
+"541",40,"2004","North_America","United States","Savannah","Savannah",-81.0998342,32.0835407,1662
+"542",NA,"2004","South_America","Panama","Balboa","Balboa",-117.924131,33.607795,NA
+"543",23,"2004","Europe","Italy","Gioia Tauro","Gioia Tauro",15.8988669,38.4262258,3261
+"544",41,"2004","Africa","Egypt","Port Said","Port Said",32.3018661,31.2652893,869
+"545",33,"2004","Asia","Oman","Salalah","Salalah",54.1065864,17.0506675,2229
+"546",NA,"2004","Asia","Taiwan","Keelung","Keelung",121.7391833,25.1276033,NA
+"547",NA,"2004","North_America","Canada","Vancouver","Vancouver",-123.1207375,49.2827291,NA
+"548",NA,"2004","Europe","Malta","Malta Freeport","Malta Freeport",14.537637,35.816287,NA
+"549",27,"2004","Asia","Japan","Yokohama","Yokohama",139.6380256,35.4437078,2718
+"550",32,"2004","Asia","Japan","Nagoya","Nagoya",136.906398,35.1814464,2304
